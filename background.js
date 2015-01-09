@@ -9,8 +9,3 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     chrome.tabs.sendMessage(activeTab.id, {"message": "click_github_link"});
   });
 });
-
-// Listens to messages sent by chrome.tabs.sendMessage
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  console.log("LISTENER FIRED");
-});
