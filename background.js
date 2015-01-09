@@ -1,5 +1,5 @@
-// This script runs in the background.
-console.log("hi from background.js");
+// This script runs in the background, and is triggered when the extension is
+// loaded.
 
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
