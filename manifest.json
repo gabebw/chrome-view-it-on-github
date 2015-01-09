@@ -4,11 +4,13 @@
   "name": "Follow & Delete GitHub Emails",
   "version": "0.1",
   "description": "Click that \"View on GitHub\" link then delete the email.",
+  "background": {
+    "scripts": [ "background.js" ]
+  },
   "content_scripts": [
     {
       "matches": [
-        "http://mail.google.com/",
-        "https://mail.google.com/"
+        "<all_urls>"
       ],
       "js": ["jquery-2.1.3.min.js", "main.js"]
     }
