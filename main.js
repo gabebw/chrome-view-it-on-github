@@ -1,3 +1,5 @@
+// This code runs in the context of a tab in Chrome.
+
 function clearBody(){
   // $ doesn't work but jQuery does, for some reason
   jQuery("body").html("");
