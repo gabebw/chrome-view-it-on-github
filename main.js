@@ -1,5 +1,9 @@
 // This code runs in the context of a tab in Chrome.
 
+function logToExtensionConsole(text){
+  chrome.runtime.sendMessage({"message": "log", "text": text });
+}
+
 function clearBody(){
   var githubLink = jQuery("a:contains('view it on GitHub'):last").eq(0);
   var githubURL = githubLink.attr("href");

@@ -14,6 +14,8 @@ chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if( request.message === "open_github_page" ) {
       chrome.tabs.create({"url": request.url});
+    } else if( request.message === "log" ){
+      console.log(request.text);
     }
   }
 );
