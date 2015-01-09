@@ -9,3 +9,11 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     chrome.tabs.sendMessage(activeTab.id, {"message": "click_github_link"});
   });
 });
+
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if( request.message === "open_github_page" ) {
+      chrome.tabs.create({"url": request.url});
+    }
+  }
+);
