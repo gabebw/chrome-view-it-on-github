@@ -10,7 +10,6 @@ function clearBody(){
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    console.log("got message");
     if( request.message === "click_github_link" ) {
       clearBody();
     }
