@@ -10,7 +10,8 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "http://mail.google.com/*",
+        "https://mail.google.com/*"
       ],
       "js": ["jquery-2.1.3.min.js", "main.js"]
     }
