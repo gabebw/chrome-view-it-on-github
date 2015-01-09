@@ -5,7 +5,12 @@ function clearBody(){
   var githubURL = githubLink.attr("href");
   var deleteButton = jQuery("[data-tooltip='Delete']:visible").eq(0);
 
-  chrome.runtime.sendMessage({"message": "open_github_page", "url": githubURL});
+  deleteButton.trigger("mousedown");
+  deleteButton.trigger("mouseup");
+  deleteButton.trigger("keydown");
+  deleteButton.trigger("keyup");
+  deleteButton.trigger("click");
+  // chrome.runtime.sendMessage({"message": "open_github_page", "url": githubURL});
 }
 
 chrome.runtime.onMessage.addListener(
