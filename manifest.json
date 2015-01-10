@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Follow & Delete GitHub Emails",
+  "name": "Follow & Delete GitHub Notification Emails",
   "version": "0.1",
-  "description": "Click that \"View on GitHub\" link then delete the email.",
+  "description": "Click that \"View it on GitHub\" link then delete the email.",
   "background": {
     "scripts": ["background.js"]
   },
