@@ -13,7 +13,7 @@
         "http://mail.google.com/*",
         "https://mail.google.com/*"
       ],
-      "js": ["jquery-2.1.3.min.js", "main.js"]
+      "js": ["jquery-2.1.3.min.js", "content.js"]
     }
   ],
   "permissions": [
